@@ -534,7 +534,8 @@ footer .logo {
   background-color: inherit;
 }
 
-.footer-form-field:focus {
+.footer-form-field:focus,
+.footer-form-field:hover {
   border: 1px solid var(--accent-color);
   outline: var(--accent-color);
 }
@@ -640,8 +641,9 @@ footer .logo {
 }
 
 .form-block {
-  max-width: 448px;
+  max-width: 100%;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .form-label,
@@ -658,9 +660,8 @@ footer .logo {
 }
 
 .form-field {
-  width: 448px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 11px;
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -678,7 +679,8 @@ footer .logo {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field:focus {
+.form-field:focus,
+.form-field:hover {
   border-color: var(--accent-color);
 }
 
@@ -693,7 +695,8 @@ footer .logo {
   transition: fill var(--timing-function);
 }
 
-.form-field:focus + .form-icon {
+.form-field:focus + .form-icon,
+.form-field:hover + .form-icon {
   fill: var(--accent-color);
 }
 
